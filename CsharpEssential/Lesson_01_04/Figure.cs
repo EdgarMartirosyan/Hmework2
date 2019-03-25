@@ -33,5 +33,13 @@ namespace Lesson_01_04
             point[1] = p2;
             point[2] = p3;
         }
+        public Figure(Point p1, Point p2, Point p3,Point p4)
+        {
+            point = new Point[4];
+            point[0] = p1;
+            point[1] = p2;
+            point[2] = p3;
+            point[3] = p4;
+        }
     }
 }
