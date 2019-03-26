@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36472D8C-AF36-44D2-B416-DCB44EED0680}</ProjectGuid>
+    <ProjectGuid>{94D21E7A-BE1A-4B9E-997E-8C84A1247626}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lesson_03_04</RootNamespace>
-    <AssemblyName>Lesson_03_04</AssemblyName>
+    <RootNamespace>Lesson_05_04</RootNamespace>
+    <AssemblyName>Lesson_05_04</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExpertDocumentWorker.cs" />
-    <Compile Include="ProDocumentWorker.cs" />
-    <Compile Include="DocumentWorker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
