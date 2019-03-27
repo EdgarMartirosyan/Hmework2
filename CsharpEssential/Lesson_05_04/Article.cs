@@ -14,13 +14,13 @@ namespace Lesson_05_04
         public Article(string name,string shope, double cost)
         {
             Name = name;
-            Shope = shope;
+            Shope = shope;  
             Cost = cost;
         }
         
         public string Info()
         {
-            return string.Format($"{Name} y {Shope}um arzhe {Cost} AMD");
+            return string.Format($"{Name} is made in {Shope} and have a  {Cost} millon AMD price");
         }
     }
 }
