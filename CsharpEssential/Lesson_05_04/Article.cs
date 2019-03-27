@@ -8,10 +8,5 @@ namespace Lesson_05_04
 {
     class Article
     {
-        
-        public string ProducteName { get; set; }
-        public string ShopeName { get; set; }
-        public double Cost { get; set; }
-
     }
 }
