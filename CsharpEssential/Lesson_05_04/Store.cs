@@ -10,6 +10,18 @@ namespace Lesson_05_04
     {
         Article[] articles;
 
+        public string this[int index]
+        {
+            get
+            {
+                return articles[index].Info();
+            }
+        }
+
+        public void AddArticle(Article value, int index)
+        {
+
+        }
 
     }
 }
