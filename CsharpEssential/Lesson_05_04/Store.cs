@@ -8,7 +8,11 @@ namespace Lesson_05_04
 {
     class Store
     {
-        Article[] articles;
+        private Article[] articles;
+        public Store(int size)
+        {
+            articles = new Article[Math.Abs(size)];
+        }
 
         public string this[int index]
         {
@@ -20,7 +24,7 @@ namespace Lesson_05_04
 
         public void AddArticle(Article value, int index)
         {
-
+            articles[index] = value;
         }
 
     }
