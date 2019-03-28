@@ -26,11 +26,11 @@ namespace ConsoleApp1
                         int a=array[i];
                         array[i] = array[q];
                         array[q] = a;
-
                     }
                 }
             }
             Console.WriteLine();
+
             for (int i = 0; i < array.Length; i++)
             {
                 Console.WriteLine(array[i]);

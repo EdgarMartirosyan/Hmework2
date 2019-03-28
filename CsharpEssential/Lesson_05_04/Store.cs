@@ -68,5 +68,31 @@ namespace Lesson_05_04
             }
         }
 
+        public void Select(string text)
+        {
+            foreach (Article item in articles)
+            {
+                if (item.ShopCountryName.Contains(text))
+                {
+                    Console.WriteLine(item.Info());
+                }
+            }
+        }
+
+        public void MaxCost( )
+        {
+            double max = articles[0].Cost;
+            Article temp = articles[0];
+            foreach (Article item in articles)
+            {
+                if (item.Cost>max)
+                {
+                    max = item.Cost;
+                    temp = item;
+                }              
+            }
+            
+            Console.WriteLine(temp.Info());
+        }
     }
 }
