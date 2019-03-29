@@ -26,7 +26,7 @@ namespace Lesson_05_04
             {
                 return articles[index].Info();
             }
-            
+
         }
 
         public string this[string index]
@@ -35,7 +35,7 @@ namespace Lesson_05_04
             {
                 for (int i = 0; i < articles.Length; i++)
                 {
-                    if (articles[i].Name==index)
+                    if (articles[i].Name == index)
                     {
                         return articles[i].Info();
                     }
@@ -58,7 +58,7 @@ namespace Lesson_05_04
             {
                 for (int q = 0; q < articles.Length; q++)
                 {
-                    if (articles[i].Cost<=articles[q].Cost)
+                    if (articles[i].Cost <= articles[q].Cost)
                     {
                         Article a = articles[i];
                         articles[i] = articles[q];
@@ -70,28 +70,25 @@ namespace Lesson_05_04
 
         public void Select(string text)
         {
-            foreach (Article item in articles)
+            foreach (Article item in articles.Where(a => a.ShopCountryName == text))
             {
-                if (item.ShopCountryName.Contains(text))
-                {
-                    Console.WriteLine(item.Info());
-                }
+                Console.WriteLine(item.Info());
             }
         }
 
-        public void MaxCost( )
+        public void MaxCost()
         {
             double max = articles[0].Cost;
             Article temp = articles[0];
             foreach (Article item in articles)
             {
-                if (item.Cost>max)
+                if (item.Cost > max)
                 {
                     max = item.Cost;
                     temp = item;
-                }              
+                }
             }
-            
+
             Console.WriteLine(temp.Info());
         }
     }
