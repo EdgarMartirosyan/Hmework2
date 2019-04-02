@@ -10,6 +10,11 @@ namespace Chapter_11_03
     {
         static void Main(string[] args)
         {
+            DateTime today = DateTime.Today;
+
+            var weekday = today.DayOfWeek;
+
+            Console.WriteLine(weekday);
         }
     }
 }
