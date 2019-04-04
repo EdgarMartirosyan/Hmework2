@@ -73,7 +73,7 @@ namespace Topic_01
 
                 Sort(arrayOne);
                 Sort(arrayTwo);
-                if (GetNumber(arrayOne)/ GetNumber(arrayTwo)==1)
+                if (GetNumber(arrayOne)% GetNumber(arrayTwo)==0)
                 {
                     Console.WriteLine("Yes");
                 }
