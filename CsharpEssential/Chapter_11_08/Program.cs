@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chapter_11_07
+namespace Chapter_11_08.CreatingAndUsingObjects
 {
-    class Sequence
+    class Program
     {
-        private static int currentValue = 0;
-
-        private Sequence()
+        static void Main(string[] args)
         {
-
+            Cat[] cat= new Cat[10];
         }
     }
 }

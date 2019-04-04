@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B38E6D05-3CAD-42A1-A15A-F715C83B3780}</ProjectGuid>
+    <ProjectGuid>{B376814E-BC53-41BB-BFA7-A715763A6B7A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Chapter_11_07</RootNamespace>
-    <AssemblyName>Chapter_11_07</AssemblyName>
+    <RootNamespace>Chapter_11_08</RootNamespace>
+    <AssemblyName>Chapter_11_08</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CreatingAndUsingObjects\Cat.cs" />
-    <Compile Include="CreatingAndUsingObjects\Sequnce.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

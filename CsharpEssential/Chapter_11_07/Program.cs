@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chapter_11_07
+
+namespace Chapter_11_07.CreatingAndUsingObjects
 {
     class Program
     {
