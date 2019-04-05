@@ -18,7 +18,7 @@ namespace ConsoleApp4
 
                 Console.WriteLine(arrayOne[i]);
             }
-           
+           ///
            
             Console.WriteLine(a);
         }

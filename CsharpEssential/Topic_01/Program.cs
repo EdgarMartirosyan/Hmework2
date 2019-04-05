@@ -58,7 +58,11 @@ namespace Topic_01
         static void Main(string[] args)
         {
             Console.WriteLine("Nermucel arajin tivy");
-            int number1 = Convert.ToInt32(Console.ReadLine());
+            int number1 = Convert.ToInt32(Console.ReadLine());///
+
+
+
+
 
             Console.WriteLine("Nermucel erkrord tivy");
             int number2 = Convert.ToInt32(Console.ReadLine());
