@@ -13,7 +13,7 @@ namespace Topic_04
             string text = "WWWWBWWWWWBBBWWWWWWWWWWB";
             string text1 = null;
             int count = 1;
-            for (int i = 0; i < text.Length ; i++)
+            for (int i = 0; i < text.Length - 1; i++)
             {
                 try
                 {
@@ -34,42 +34,42 @@ namespace Topic_04
                         count = 1;
                     }
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
                     Console.WriteLine("aaaaaaaaaaaaaaaaaa");
                 }
             }
 
             Console.WriteLine(text1);
-            string text2 = null;
+            //string text2 = null;
             
 
-            for (int i = 0; i < text1.Length; i++)
-            {
+            //for (int i = 0; i < text1.Length; i++)
+            //{
                
-                try
-                {
-                    if ( text1[i]/ 1 > 0)
-                    {
-                        for (int j = 0; j < text1[i]; j++)
-                        {
-                            text2 = text2 + text1[i + 1];
-                        }
-                    }
-                }
-                catch (Exception)
-                {
+            //    try
+            //    {
+            //        if ( text1[i]/ 1 > 0)
+            //        {
+            //            for (int j = 0; j < text1[i]; j++)
+            //            {
+            //                text2 = text2 + text1[i + 1];
+            //            }
+            //        }
+            //    }
+            //    catch (Exception)
+            //    {
 
-                    Console.WriteLine("bbbbbbbbbbbbbbb");
-                }
+            //        Console.WriteLine("bbbbbbbbbbbbbbb");
+            //    }
                 
-            }
-            Console.WriteLine(text2);
+            //}
+            //Console.WriteLine(text2);
 
-            string a = "1";
-            string b = "5";
-            int c = int.Parse(a)/1;
-            Console.WriteLine(c);
+            //string a = "1";
+            //string b = "5";
+            //int c = int.Parse(a)/1;
+            //Console.WriteLine(c);
 
 
             Console.ReadKey();
