@@ -8,6 +8,7 @@ namespace for_161
 {
     class Program
     {
+        // dzerqov lcvox matrica
         static void Main(string[] args)
         {
             int a=int.Parse(Console.ReadLine());

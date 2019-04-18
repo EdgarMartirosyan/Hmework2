@@ -84,9 +84,7 @@ namespace Topic_01
                 else
                 {
                     Console.WriteLine("No");
-                }
-                
-               
+                }                             
             }
             else
             {
