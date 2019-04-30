@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3D753D64-3ECC-4992-BF08-483606ACD373}</ProjectGuid>
+    <ProjectGuid>{BA785D99-7987-4886-BF5E-51FCEB80269F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lesson_10_04</RootNamespace>
-    <AssemblyName>Lesson_10_04</AssemblyName>
+    <RootNamespace>ConsoleApp5</RootNamespace>
+    <AssemblyName>ConsoleApp5</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyDictionary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
