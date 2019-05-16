@@ -39,13 +39,19 @@ namespace ConsoleApp7
                 Console.WriteLine(il[i]);
             }
             Console.WriteLine(new string('-', 30));
-            Console.WriteLine(   il.Capacity);
+            Console.WriteLine("capacity"+   il.Capacity);
             Console.WriteLine(new string('-', 30));
+            //  il.Clear();
+
+            il.TrimExcess();
             il.Clear();
+            Console.WriteLine("changed capacity" + il.Capacity);
+
             for (int i = 0; i < il.Count; i++)
             {
                 Console.WriteLine(il[i]);
             }
+            il.TrimExcess();
             Console.WriteLine(il.Capacity);
             Console.WriteLine(new string('-', 30));
             Console.ReadKey();

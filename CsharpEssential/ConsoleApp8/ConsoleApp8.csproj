@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{08974A13-0BB9-42A6-AD6B-6F6A03075A77}</ProjectGuid>
+    <ProjectGuid>{AB700B2A-436A-412C-B35D-01310EA55C1B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lesson_10_02</RootNamespace>
-    <AssemblyName>Lesson_10_02</AssemblyName>
+    <RootNamespace>ConsoleApp8</RootNamespace>
+    <AssemblyName>ConsoleApp8</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMyList.cs" />
-    <Compile Include="MyList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

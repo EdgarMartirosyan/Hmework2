@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{08974A13-0BB9-42A6-AD6B-6F6A03075A77}</ProjectGuid>
+    <ProjectGuid>{865C005C-FD2C-4A7B-90C6-8B35F7A2F3B6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lesson_10_02</RootNamespace>
-    <AssemblyName>Lesson_10_02</AssemblyName>
+    <RootNamespace>ConsoleApp12</RootNamespace>
+    <AssemblyName>ConsoleApp12</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMyList.cs" />
-    <Compile Include="MyList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

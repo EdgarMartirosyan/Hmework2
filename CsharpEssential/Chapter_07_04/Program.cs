@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,22 +11,45 @@ namespace Chapter_07_04
     {
         static void Main(string[] args)
         {
-            int[] array = { 1, 1, 2, 3, 2, 2, 2, 1 };
-            int count = 0;
+            int[] array = { 1, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 4, 2, 3, 4, 4, 4, 4, 4, 4, 5,12, 12, 12, 12, 12, 12, 12, 12 };
+            int count = 1;
             int max = 0;
-            for (int i = 0; i < array.Length-1; i++)
+            int j = 0;
+
+            for (int i = 0; i < array.Length - 1; i++)
             {
-                if (array[i]-array[i+1]==0)
+                if (array[i] == array[i + 1])
                 {
                     count++;
                 }
-                
-                if (count>max)
+                else
                 {
+                    count = 1;
+                }
+
+                if (count > max)
+
+                {
+                    j = array[i];
                     max = count;
                 }
             }
+            Console.WriteLine(j);
             Console.WriteLine(max);
+            Console.WriteLine();
+            int[] arrayNew = new int[max];
+            for (int i = 0; i < arrayNew.Length; i++)
+            {
+                arrayNew[i] = j;
+            }
+            Console.Write("{");
+            for (int i = 0; i < arrayNew.Length; i++)
+            {
+
+                Console.Write($"{arrayNew[i]},");
+
+            }
+            Console.Write("}");
             Console.ReadKey();
         }
     }

@@ -11,6 +11,7 @@ namespace Lesson_10_02
         void Add(T a);
         T this[int index] { get; }
         int Count { get; }
-
+        void Clear();
+        bool Contains(T item);
     }
 }
