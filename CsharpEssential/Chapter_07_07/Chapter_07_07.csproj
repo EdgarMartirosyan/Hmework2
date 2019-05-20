@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C648A11E-4805-4C74-9F4F-26DC831439FD}</ProjectGuid>
+    <ProjectGuid>{D3FF9911-73BE-43AC-BF37-8B3CC0181732}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lesson_11_04</RootNamespace>
-    <AssemblyName>Lesson_11_04</AssemblyName>
+    <RootNamespace>Chapter_07_07</RootNamespace>
+    <AssemblyName>Chapter_07_07</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CarCollection.cs" />
-    <Compile Include="MyList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
