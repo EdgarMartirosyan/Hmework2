@@ -10,23 +10,36 @@ namespace for_157_1
     {
         static void Main(string[] args)
         {
-            int[] array = { 2, 4, 5, 5, 7, 8, 9, 10, 10, 10, 6, 2 };
+            int[] array = { 2, 2, 3,4,5,5,2,5};
+            int count = 0;
+
+            int newlenght = 0;
+            Console.Write("{");
             for (int i = 0; i < array.Length; i++)
             {
-                string p = "No";
                 for (int j = i + 1; j < array.Length; j++)
                 {
                     if (array[i] == array[j])
                     {
-                        p = "Yes";
+                        count++;
+                    }
+                   
+                }
+                if (count == 1)
+                {
+                    if (i==array.Length-1)
+                    {
+                        Console.Write(array[i] + ",");
+                    }
+                    else
+                    {
+                        Console.Write(array[i] );
                     }
                 }
-                if (p == "Yes")
-                {
-                    Console.WriteLine(array[i]);
-                }
+                count = 0;
             }
-
+            Console.WriteLine("}");
+            //Console.WriteLine(newlenght);
             Console.ReadKey();
         }
     }

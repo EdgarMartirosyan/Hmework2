@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson_11_04
+namespace Lesson_11_02
 {
     public interface IMyList<T>//:ICollection<T>,IEnumerable<T>
     {
@@ -34,6 +34,38 @@ namespace Lesson_11_04
             tempArray[array.Length] = a;
             array = tempArray;
         }
+        public T this[int index]
+        {
+            get { return array[index]; }
+        }
+        public int Count
+        {
+            get { return array.Length; }
+        }
+        public void Clear()
+        {
+            array = new T[0];
+        }
 
+        public bool Contians(T item)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                if ((int)(object)array[i]==(int)(object)item)
+                {
+                    return true;
+                }                   
+            }
+            return false;
+        }
+        public override string ToString()
+        {
+            string stroka = null;
+            for (int i = 0; i < array.Length; i++)
+            {
+                stroka += array[i] + " ";
+            }
+            return "zangvaci chapy " + array.Length + " zangvaci elementnery:" + stroka;
+        }
     }
 }
