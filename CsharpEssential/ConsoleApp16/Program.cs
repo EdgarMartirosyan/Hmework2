@@ -8,53 +8,48 @@ namespace ConsoleApp16
 {
     class Program
     {
-        static void Main(string[] args)
+        public static  bool IsMatchh(string s, string p)
         {
-            string s = "edg";
-            string p = "ed*";
-            string ard;
-           
-            bool chek = false;
+
             int count = 0;
 
 
-            for (int i = 0; i < s.Length-1; i++)
+            for (int i = 0; i < s.Length - 1; i++)
             {
-                for (int j = 0; j < p.Length-1; j++)
+                for (int j = 0; j < p.Length - 1; j++)
                 {
-                    if ((p[j]==s[i] && p[j+1]==s[i+1])|| p[j]=='*')
+                    if (p[j] == s[i] && (p[j + 1] == s[i + 1] || p[j + 1] == '*' || p[j + 1] == '.'))
                     {
                         count++;
+                        break;
                     }
-                }
-                
-            }
-            if (s.Length-1==count)
-            {
-                chek = true;
-            }
-
-
-          
-
-
-           /* for (int i = 0; i < s.Length-1; i++)
-            {
-                for (int j = 0; j < p.Length-1; i++)
-                {
-                    if (p[j] == s[i]&&(p[j+1]== s[i + 1] || p[j+1]=='*'|| p[j+i]=='.')||p[j]=='*'||p[i]=='.')
+                    if ((p[j] == '*' || p[j] == '.') && p[j + 1] == s[i + 1])
                     {
-
                         count++;
+                        break;
                     }
-                    if (s.Length == count)
+                    if ((p[j] == '*' || p[j] == '.') && (p[j + 1] == s[i + 1] || p[j + 1] == '*' || p[j + 1] == '.'))
                     {
-                        chek = true;
+                        count++;
+                        break;
                     }
+
+
                 }
-               
-            }*/
-            Console.WriteLine(chek);
+
+            }
+
+            if (s.Length - 1 == count)
+
+                return true;
+            return false;
+
+        }
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine(IsMatchh( "edgar", "asd*e.g.r*as"));
+
             Console.ReadKey();
         }
     }
